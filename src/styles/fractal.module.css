@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+.circle-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 100%;
+    border: 4px solid #222;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: 10s linear infinite fractalAnimate;
+}
+
+#circle-1 {
+    width: 100px;
+    height: 100px; 
+}
+
+#circle-1 .circle {
+    background-color: #222;
+}
+
+#circle-2 {
+    width: 200px;
+    height: 200px;
+
+}
+
+#circle-3 {
+    width: 325px;
+    height: 325px;
+}
+
+#circle-3 .circle {
+    border-width: 3px;
+}
+
+#circle-4 {
+    width: 450px;
+    height: 450px;
+}
+
+#circle-4 .circle {
+    border-width: 2px;
+}
+
+@keyframes fractalAnimate {
+    0% {
+        width: 90%;
+        height: 90%;
+    }
+
+    50% {
+        width: 100%;
+        height: 100%;
+    }
+
+    100% {
+        width: 90%;
+        height: 90%;
+    }
+}

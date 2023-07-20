@@ -1,9 +1,11 @@
 import './App.css';
 
+import Intro from '../src/pages/Intro'
+
 function App() {
   return (
     <div>
-      <h1>Welcome to the Alternet</h1>
+      <Intro />
     </div>
   );
 }
