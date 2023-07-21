@@ -8,6 +8,95 @@
     width: 100%;
 }
 
+.container p {
+    width: 50%;
+    text-align: center;
+}
+
+.text {
+    animation: appear 7s infinite; /* make sure duration matches setInterval in js file */
+}
+
+.final-text, .button {
+    animation: appear-once 7s 1;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes appear-once {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+/* Typing animation dreams */
+/* .typewriter {
+    width: fit-content
+}
+
+.typewriter p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    border-right: 2px solid transparent;
+    animation: blinking 1s infinite step-start 8s, typing 8s steps(32) infinite;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    30% {
+        width: 100%
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    70% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes blinking {
+    0% {
+        border-color: black;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+    100% {
+        border-color: black;
+    }
+} */
+
 /* .container img {
     width: 350px;
     height: 350px
